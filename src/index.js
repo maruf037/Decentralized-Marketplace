@@ -3,6 +3,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import MyWeb3 from 'web3'
 import { BrowserRouter, Route, withRouter } from 'react-router-dom'
+import Header from './components/Header'
 
 class Main extends React.Component {
     /* Creating constructor with few products that have necessary properties
@@ -59,7 +60,7 @@ class Main extends React.Component {
         return (
             <div>
                 <Route path="/" exact render={() => (
-                    <div>The dApp has been setup</div>
+                    <Header />
                 )} />
             </div>
         )
